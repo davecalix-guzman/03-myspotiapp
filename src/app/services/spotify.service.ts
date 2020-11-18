@@ -9,7 +9,7 @@ export class SpotifyService {
     console.log('Spotify service listo');
   }
 
-  getNewReleases() {
+  getNewReleases(): void {
     const headers = new HttpHeaders({
       Authorization:
         'Bearer BQBy4YtUfnPAiIh58s9zveePU-LVTf6Vyjdb8hG_17XskYRQiRjzGsxYOzDXFZGClxDr0mALDYfeZ31WZC4',
