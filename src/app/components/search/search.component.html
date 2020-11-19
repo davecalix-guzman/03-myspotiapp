@@ -1,1 +1,7 @@
-<p>search works!</p>
+<div class="row animated fadeIn fast">
+    <div class="col">
+        <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar artista...">
+    </div>
+</div>
+<br><br>
+<app-tarjeta [items]="artistasEncontrados"></app-tarjeta>
