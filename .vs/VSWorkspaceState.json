@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\artista",
+    "\\src\\app\\components\\shared",
+    "\\src\\app\\components\\shared\\loading",
+    "\\src\\app\\components\\tarjeta",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\components\\artista\\artista.component.ts",
+  "PreviewInSolutionExplorer": false
+}
