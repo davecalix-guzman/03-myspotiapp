@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { SpotifyService } from '../../services/spotify.service';
 
 @Component({
@@ -13,10 +14,13 @@ export class ArtistaComponent {
   constructor(private spotify: SpotifyService, private route: ActivatedRoute) {
     this.route.params.subscribe((params) => {
       console.log(params.id);
-      this.spotify.getArtistaById(params.id).subscribe((response: any) => {
-        this.artista = response;
-        console.log(response);
-      });
+      this.getArtista(params.id);
+    });
+  }
+
+  getArtista(artistaId: string): Subscription {
+    return this.spotify.getArtistaById(artistaId).subscribe((response: any) => {
+      this.artista = response;
     });
   }
 }

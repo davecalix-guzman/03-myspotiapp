@@ -11,7 +11,7 @@ export class SearchComponent {
   artistasEncontrados: any[] = [];
   constructor(private spotify: SpotifyService) {}
 
-  buscar(termino: string) {
+  buscar(termino: string): void {
     if (termino !== '') {
       this.spotify.getArtistas(termino).subscribe((data: any) => {
         console.log(data);
